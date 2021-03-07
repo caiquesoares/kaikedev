@@ -1,1 +1,47 @@
-/* You can add global styles to this file, and also import other style files */
+  /* You can add global styles to this file, and also import other style files */
+  @import url(assets/css/plugins/bootstrap/bootstrap.min.css);
+  @header: 255px;
+  @footer: 50px;
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+  body {
+    background: #2A2A2A;
+    border-left: 10px solid #DA006A;
+    border-right: 10px solid transparent;
+  }
+  /*
+  .container.main {
+    min-height: 100%;
+    margin-bottom: -@footer;
+  }
+  app-footer, .push{
+    height: @footer;
+  }
+  */
+
+  .conteudo {
+    padding: 15px;
+    img {
+      max-width: 100%;
+      position: relative;
+    }
+    .direita{
+      img {
+        margin-bottom: 30px;
+
+      }
+      & > div {
+        div:last-child {
+          img {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+    .esquerda{
+
+    }
+  }
+
