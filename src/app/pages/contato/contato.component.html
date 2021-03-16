@@ -1,13 +1,11 @@
 <div class="conteudo">
   <div class="row">
     <div class="col-8 direita">
-
-      email: eu@kaike.dev
-      whats: +55 11 98300 8156
-      github: https://github.com/caiquesoares
-      insta: kaikelf
-      linkedin: https://www.linkedin.com/in/caique-fagundes-6237a9103/
-
+      <div *ngFor="let item of social">
+        <div><i class="far fa-"></i></div>
+        <div>{{item.label}}</div>
+        <div>{{item.conteudo}}</div>
+      </div>
     </div>
     <div class="col-4 esquerda">
       <img src="http://placehold.it/340x605" alt="">

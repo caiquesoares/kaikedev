@@ -1,5 +1,6 @@
   /* You can add global styles to this file, and also import other style files */
   @import url(assets/css/plugins/bootstrap/bootstrap.min.css);
+  @import url(assets/css/plugins/fontawesome/fontawesome.min.css);
   @header: 255px;
   @footer: 50px;
   html, body {
@@ -7,9 +8,10 @@
     margin: 0;
   }
   body {
-    background: #2A2A2A;
     border-left: 10px solid #DA006A;
     border-right: 10px solid transparent;
+    background: url(assets/img/arvores.svg) bottom center no-repeat #2A2A2A;
+    background-size: cover;
   }
   /*
   .container.main {
@@ -45,3 +47,6 @@
     }
   }
 
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

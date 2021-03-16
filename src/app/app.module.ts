@@ -11,6 +11,9 @@ import { EuComponent } from './pages/eu/eu.component';
 import { AjudaComponent } from './pages/ajuda/ajuda.component';
 import { ContatoComponent } from './pages/contato/contato.component';
 import { MenuComponent } from './includes/menu/menu.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatIconModule} from "@angular/material/icon";
+import { SocialComponent } from './includes/social/social.component';
 
 @NgModule({
   declarations: [
@@ -22,12 +25,15 @@ import { MenuComponent } from './includes/menu/menu.component';
     EuComponent,
     AjudaComponent,
     ContatoComponent,
-    MenuComponent
+    MenuComponent,
+    SocialComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        MatIconModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
